@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.home
+package com.example.myapplication.ui.screens.home
 
 const val SPOTTED_SEAL_DESCRIPTION = """
 점박이 물범은 우리나라 서해에서 볼 수 있는 친구입니다.

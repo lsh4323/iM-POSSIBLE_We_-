@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.house
+package com.example.myapplication.ui.screens.house
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,7 +9,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.R
-import com.example.myapplication.ui.theme.MyApplicationTheme
+import com.example.myapplication.ui.theme.OceanFriendsTheme
 
 @Composable
 fun HouseRoute(
@@ -39,7 +39,7 @@ fun HouseScreen(
 )
 @Composable
 private fun HouseScreenPreview() {
-    MyApplicationTheme {
+    OceanFriendsTheme {
         HouseScreen()
     }
 }

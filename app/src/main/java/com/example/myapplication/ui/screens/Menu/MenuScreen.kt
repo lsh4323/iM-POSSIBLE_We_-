@@ -25,8 +25,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.myapplication.ui.theme.MyApplicationTheme
 import androidx.compose.foundation.border
+import com.example.myapplication.ui.theme.OceanFriendsTheme
 
 @Composable
 fun MenuRoute(
@@ -46,11 +46,6 @@ fun MenuRoute(
 fun MenuScreen(
     onBackClick: () -> Unit,
     modifier: Modifier = Modifier,
-    onWeeklyAnalysisClick: () -> Unit = {},
-    onDonationClick: () -> Unit = {},
-    onEsgReportClick: () -> Unit = {},
-    onGradeClick: () -> Unit = {},
-    onMyPageClick: () -> Unit = {},
     onDeveloperModeClick: () -> Unit = {}
 ) {
     Column(
@@ -67,36 +62,6 @@ fun MenuScreen(
         )
 
         Spacer(modifier = Modifier.height(8.dp))
-
-        MenuItem(
-            text = "이번주 소비 분석",
-            onClick = onWeeklyAnalysisClick
-        )
-
-        MenuItem(
-            text = "기부하기",
-            onClick = onDonationClick
-        )
-
-        MenuItem(
-            text = "ESG 활동 보고서",
-            onClick = onEsgReportClick
-        )
-
-        MenuItem(
-            text = "이번주 소비 분석",
-            onClick = onWeeklyAnalysisClick
-        )
-
-        MenuItem(
-            text = "등급",
-            onClick = onGradeClick
-        )
-
-        MenuItem(
-            text = "마이페이지",
-            onClick = onMyPageClick
-        )
 
         MenuItem(
             text = "개발자 모드",
@@ -194,7 +159,7 @@ private fun MenuItem(
 )
 @Composable
 private fun MenuScreenPreview() {
-    MyApplicationTheme {
+    OceanFriendsTheme {
         MenuScreen(
             onBackClick = {}
         )

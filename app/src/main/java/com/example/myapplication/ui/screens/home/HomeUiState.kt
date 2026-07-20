@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.home
+package com.example.myapplication.ui.screens.home
 
 data class HomeUiState(
     val title: String = "홈",

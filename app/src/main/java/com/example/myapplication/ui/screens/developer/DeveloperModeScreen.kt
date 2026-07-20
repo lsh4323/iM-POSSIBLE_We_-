@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.developer
+package com.example.myapplication.ui.screens.developer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -26,7 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.myapplication.ui.theme.MyApplicationTheme
+import com.example.myapplication.ui.theme.OceanFriendsTheme
 
 @Composable
 fun DeveloperModeScreen(
@@ -151,7 +151,7 @@ private fun DeveloperMenuItem(
 )
 @Composable
 private fun DeveloperModeScreenPreview() {
-    MyApplicationTheme {
+    OceanFriendsTheme {
         DeveloperModeScreen(
             onBackClick = {},
             onLetterAlarmClick = {},
